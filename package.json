@@ -1,0 +1,24 @@
+{
+  "name": "headless-media-sdk-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Headless Media SDK Ecosystem with pure core SDK, platform wrappers, headless UI components, and demo application.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run --workspaces --if-present build",
+    "test": "npm run --workspaces --if-present test",
+    "dev": "npm run --workspace=packages/app-web dev",
+    "docs:dev": "npm run --workspace=packages/docs-site dev",
+    "docs:build": "npm run --workspace=packages/docs-site build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  }
+}

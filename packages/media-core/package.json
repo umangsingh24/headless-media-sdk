@@ -1,0 +1,18 @@
+{
+  "name": "media-core",
+  "version": "1.0.0",
+  "description": "Framework-agnostic, zero-UI core SDK for media management and Pexels API integration.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/**/*.test.js"
+  },
+  "keywords": ["media-sdk", "headless", "pexels"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
